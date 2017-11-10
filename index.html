@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>So you think you know car logos?</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Car logos quiz app">
+  	<meta name="keywords" content="HTML, CSS, cars, logos">
+  	<meta name="author" content="Stav Davis">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<!-- fonts: -->
+  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+  	<!-- css reset: -->
+	  <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+	  <!-- styles: -->
+	  <link rel="stylesheet" type="text/css" href="main.css"> 
+</head>
+
+<body>
+  <header role="banner" class="fixed-top-banner">
+    <h1>So, do you know car logos?</h1>
+  </header>
+  
+  <main role="main">
+    
+    <section class="welcome-page">
+      <!--This section is rendered by the JS function renderWelcomePage-->
+    </section>
+    
+    <section class="questions-section">
+      <!--This section is rendered by the JS function renderQuestionPage. Each question is automatically
+      loaded after the previous question is answered (including the result of the previous questions) -->
+    </section>
+    
+    <section class="progress-section">
+      <!--This section provides a progress report and is updated after every question, 
+      but not removed until the last q is answered-->
+    </section>
+    
+    <section class="summary-page">
+      <!--This section is rendered by the JS function renderSummaryPage - after all questions are answered-->
+    </section>
+  </main>
+  
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

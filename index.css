@@ -1,0 +1,159 @@
+/* Note on responsive design: all texts and margins scale with screen size, up to 640px (mobile). For larger screens (desktop), fonts are fxed size (the size they stopped growing to at 640). */
+
+* {
+  font-style: italic;
+  font-family: 'Racing Sans One', cursive;}
+
+h1 { /* mobile defaults - fonts change with screen width (see below for desktop font size) */
+  font-size: 7vw; /*letter width (and height) scales with viewport size (ensures test doesn't bleed into next line)*/
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 640px) { /*desktop font size is constant*/
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.fixed-top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid black;
+  background: url("http://media.istockphoto.com/photos/tyre-track-picture-id173640115");
+  background-size: 100% 100%;
+  color: white;
+  text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+main {
+  height: 90vh; /* 90% of viewport - makes sure welcome page has no scroll */
+  z-index: 0;
+  /*border: 1px solid black;*/
+}
+
+.welcome-page {
+  position: relative; /* relative to its default position at top of .main */
+  top: 25%;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+
+.welcome-page h2 { /* mobile default - see below for desktop fixed font size */
+  font-size: 8vw; /* letter width (and height) scales with window size */
+}
+
+@media only screen and (min-width: 640px) { /*desktop font size is constant*/
+  .welcome-page h2 {
+    font-size: 50px;
+  }
+}
+
+.start-quiz-button { /* mobile default - see below for desktop fixed font size */
+  font-size: 5vw;
+  width: 40vw;
+  text-align: center;
+  border: 0;
+  background-color: white;
+}
+
+.start-quiz-button .start-button-image {
+  position: relative;
+  left: 2vw;
+  top: 0.5vh;
+  width: 25%;
+}
+
+@media only screen and (min-width: 640px) { /*desktop font size is constant*/
+  .start-quiz-button {
+    font-size: 30px;
+    width: 300px;
+  }
+}
+
+.questions-section {  /* mobile default - see below for desktop design */
+  margin-top: 12vw;
+}
+
+@media only screen and (min-width: 640px) { /*desktop font size is constant*/
+  .questions-section {
+    margin-top: 80px;
+  }
+}
+
+.feedback { /* mobile default - see below for desktop design */
+  font-size: 5vw;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 640px) { /*desktop font size is constant*/
+  .feedback {
+    font-size: 25px;
+  }
+}
+
+.hooray {
+  color: green;
+  text-align: left;
+}
+
+.boo {
+  color: red;
+  text-align: left;
+}
+
+.current-question-container { /* mobile default - see below for desktop design */
+  text-align: center;
+  width: 75%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 640px) { /*desktop font size is constant*/
+  .current-question-container {
+    width: 250px;
+  }
+}
+
+#current-question {
+  text-align: left;
+}
+
+#current-question label { /* mobile default - see below for desktop design */
+  display: block;
+  font-weight: normal;
+  font-size: 5vw;
+}
+
+@media only screen and (min-width: 640px) { /*desktop font size is constant*/
+  #current-question label {
+    font-size: 22px;
+  }
+}
+
+.current-logo {
+  width: 100%;   /* 100% of parent container */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*border: 1px solid black;*/
+}
+
+.current-image {
+  width: 100%;
+}
+
+.summary-page .summary-statement {
+  text-align: center;
+}
+
+.start-over-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

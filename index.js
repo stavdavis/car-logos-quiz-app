@@ -157,10 +157,10 @@ function renderQuestionPage(qIndex) {
             <img class="current-image" src="${questionsArray[qIndex].questionSource}" alt="${questionsArray[qIndex].logoAltText}">
           </div>
           
-          <input id="current-question${qIndex+1}" id="ans1" type="radio" name="answer-option" value="${questionsArray[qIndex].answers[0]}"> ${questionsArray[qIndex].answers[0]}<br>
-          <input id="current-question${qIndex+1}" id="ans2" type="radio" name="answer-option" value="${questionsArray[qIndex].answers[1]}"> ${questionsArray[qIndex].answers[1]}<br>
-          <input id="current-question${qIndex+1}" id="ans3" type="radio" name="answer-option" value="${questionsArray[qIndex].answers[2]}"> ${questionsArray[qIndex].answers[2]}<br>
-          <input id="current-question${qIndex+1}" id="ans4" type="radio" name="answer-option" value="${questionsArray[qIndex].answers[3]}"> ${questionsArray[qIndex].answers[3]}
+          <input id="current-question${qIndex+1}" type="radio" name="answer-option" value="${questionsArray[qIndex].answers[0]}"> ${questionsArray[qIndex].answers[0]}<br>
+          <input id="current-question${qIndex+1}" type="radio" name="answer-option" value="${questionsArray[qIndex].answers[1]}"> ${questionsArray[qIndex].answers[1]}<br>
+          <input id="current-question${qIndex+1}" type="radio" name="answer-option" value="${questionsArray[qIndex].answers[2]}"> ${questionsArray[qIndex].answers[2]}<br>
+          <input id="current-question${qIndex+1}" type="radio" name="answer-option" value="${questionsArray[qIndex].answers[3]}"> ${questionsArray[qIndex].answers[3]}
 
         </form>
       </div>`
